@@ -460,13 +460,13 @@ header {
   border: 1px solid var(--icons-color);
   border-radius: 4px;
   fill: var(--icons-color);
-  transition: background-color var(--transition-parameter),
+  transition: border-color var(--transition-parameter),
     fill var(--transition-parameter), transform var(--transition-parameter);
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  fill: currentColor;
+  fill: var(--hover-nav-color);
   border-color: var(--hover-nav-color);
   transform: scale(1.25);
 }
