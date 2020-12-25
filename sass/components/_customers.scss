@@ -1,0 +1,37 @@
+.regular-customers {
+  @extend %paddingContainer;
+
+  h2 {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.customers {
+  display: flex;
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.customers-link {
+  @extend %flex;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid $iconsColor;
+  border-radius: 4px;
+  fill: $iconsColor;
+  transition: border-color $transitionParameter, fill $transitionParameter,
+    transform $transitionParameter;
+
+  &:hover,
+  &:focus {
+    fill: $hoverColor;
+    border-color: $hoverColor;
+    transform: scale(1.25);
+  }
+}
