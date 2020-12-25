@@ -1,12 +1,11 @@
-@import '';
-@import '';
-@import '';
+@import './utils/variables';
+@import './utils/placeholders';
 
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
+@import './base/base';
+
+@import './components/logo';
+@import './components/page-header';
+
+@import './components/portfolio';
+
+@import './components/page-footer';
