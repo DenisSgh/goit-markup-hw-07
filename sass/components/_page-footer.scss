@@ -1,0 +1,155 @@
+footer {
+  background-color: #2f303a;
+  color: #fff;
+  padding: 60px 0px;
+
+  .container {
+    display: flex;
+  }
+}
+
+// Address
+.address-container {
+  min-width: 231px;
+  margin-right: 70px;
+}
+
+address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.contacts {
+  font-size: 14px;
+  line-height: 1.71;
+
+  .link-contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+// Social links
+.social-links-container {
+  min-width: 206px;
+  margin-right: 93px;
+
+  p {
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.social-link-list {
+  display: flex;
+
+  width: 206px;
+  height: 44px;
+
+  .social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-link {
+  @extend %flex;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $transitionParameter,
+    transform $transitionParameter;
+
+  &:hover,
+  &:focus {
+    background-color: $hoverColor;
+    transform: scale(1.25);
+  }
+}
+
+// Subscribe place
+.subscribe-container {
+  min-width: 570px;
+
+  p {
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 353px;
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+
+  input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.button-subscribe {
+  @extend %flex;
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  fill: currentColor;
+
+  color: #fff;
+  background: $buttonColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  transition: color $transitionParameter, background $transitionParameter,
+    fill $transitionParameter;
+
+  &:hover,
+  &:focus {
+    color: #000;
+    background-color: #fff;
+  }
+
+  .subscribe-icon {
+    margin-left: 10px;
+  }
+}
