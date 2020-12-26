@@ -1,20 +1,20 @@
 .regular-customers {
   @extend %paddingContainer;
+}
 
-  h2 {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-bottom: 50px;
-  }
+.regular-customers h2 {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .customers {
   display: flex;
+}
 
-  .item:not(:last-child) {
-    margin-right: 30px;
-  }
+.customers .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .customers-link {

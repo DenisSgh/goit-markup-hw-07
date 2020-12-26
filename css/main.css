@@ -17,7 +17,7 @@
   padding-bottom: 94px;
 }
 
-.feature-icon, .employment p, .team-link-list, .team-link, .customers-link, .social-link, .button-subscribe {
+.input-checkbox-container label[for='privacy'], .feature-icon, .employment p, .team-link-list, .team-link, .customers-link, .social-link, .button-subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,7 +338,7 @@ header {
   text-align: center;
 }
 
-.modal-form .modal-icon {
+.modal-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -378,6 +378,11 @@ header {
   letter-spacing: 0.01em;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form .form-input:hover, .modal-form .form-input:focus {
+  border: 1px solid #2196f3;
+  outline: none;
 }
 
 .modal-form textarea {
@@ -421,10 +426,7 @@ header {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form .form-input:hover,
-.modal-form .form-input:focus,
-.modal-form textarea:hover,
-.modal-form textarea:focus {
+.modal-form textarea:hover, .modal-form textarea:focus {
   border: 1px solid #2196f3;
   outline: none;
 }
@@ -434,7 +436,7 @@ header {
   fill: #2196f3;
 }
 
-.modal-form .checkbox {
+.checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -448,7 +450,7 @@ header {
   overflow: hidden;
 }
 
-.modal-form .checkbox-icon {
+.checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -459,7 +461,7 @@ header {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form .checkbox:checked + .checkbox-icon {
+.checkbox:checked + .checkbox-icon {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.957 7.752l-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3e%3c/svg%3e");
   background-color: #2196f3;
   background-size: contain;
@@ -472,19 +474,10 @@ header {
 }
 
 .input-checkbox-container label[for='privacy'] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -630,15 +623,15 @@ header {
   display: flex;
 }
 
-.team-list .item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-list .item {
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-description {
@@ -875,7 +868,7 @@ address {
   background-color: #fff;
 }
 
-.button-subscribe .subscribe-icon {
+.subscribe-icon {
   margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */
